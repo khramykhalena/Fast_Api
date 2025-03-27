@@ -5,11 +5,13 @@
 - Топ-N самых приоритетных задач
 - Аутентификация пользователей с JWT
 - Кэширование GET-запросов
+Как запустить:
 git clone https://github.com/khramykhalena/Fast_Api.git
 cd Fast_Api
 pip install -r requirements.txt
 uvicorn main:app --reload
-Доступные методы
+
+Доступные методы:
 Метод	Путь	Описание
 POST	/users/	Создать пользователя
 POST	/token	Получить JWT-токен
