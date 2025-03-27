@@ -10,6 +10,7 @@ git clone https://github.com/khramykhalena/Fast_Api.git
 cd Fast_Api
 pip install -r requirements.txt
 uvicorn main:app --reload
+доступно по - http://127.0.0.1:8000
 
 Доступные методы:
 Метод	Путь	Описание
