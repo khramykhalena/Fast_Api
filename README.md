@@ -5,6 +5,17 @@
 - Топ-N самых приоритетных задач
 - Аутентификация пользователей с JWT
 - Кэширование GET-запросов
-1. Установите зависимости:
-```bash
+git clone https://github.com/khramykhalena/Fast_Api.git
+cd Fast_Api
 pip install -r requirements.txt
+uvicorn main:app --reload
+Доступные методы
+Метод	Путь	Описание
+POST	/users/	Создать пользователя
+POST	/token	Получить JWT-токен
+POST	/tasks/	Создать задачу
+GET	/tasks/	Получить все задачи
+GET	/tasks/top/{n}	Топ-N задач по приоритету
+GET	/tasks/{task_id}	Получить задачу по ID
+PUT	/tasks/{task_id}	Обновить задачу
+DELETE	/tasks/{task_id}	Удалить задачу
